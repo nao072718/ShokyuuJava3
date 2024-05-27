@@ -5,7 +5,7 @@ public class Animation extends MyFrame{
 		while(x<=170) {
 			clear();
 			setColor(0,128,0);
-			fillRect(x,80,10,100);
+			fillOval(x,60,50,50);
 			x+=5;
 			sleep(0.1);
 			
