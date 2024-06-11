@@ -32,17 +32,28 @@ public class Nextcar extends Vehicle implements KeyListener{
 			vx=5;	
 		}
 		if(e.getKeyCode()==KeyEvent.VK_UP) {
-			vx=5;	
+			vy=-5;	
 		}
 		if(e.getKeyCode()==KeyEvent.VK_DOWN) {
-			vx=5;	
+			vy=5;	
 		}
 	}
 	//キーが離されたとき
 	@Override
 	public void keyReleased(KeyEvent e) {
 		// TODO 自動生成されたメソッド・スタブ
-		vx=0;
+		if(e.getKeyCode()==KeyEvent.VK_LEFT) {
+			vx=0;	
+		}
+		if(e.getKeyCode()==KeyEvent.VK_RIGHT) {
+			vx=0;	
+		}
+		if(e.getKeyCode()==KeyEvent.VK_UP) {
+			vy=0;	
+		}
+		if(e.getKeyCode()==KeyEvent.VK_DOWN) {
+			vy=0;	
+		}
 	}
 	
 	
